@@ -1,0 +1,9 @@
+const inGameMusic = new Audio("../audio/littleroot.WAV");
+const titleMusic = new Audio("../audio/titleMusic.wav");
+const clickOpen = new Audio("../audio/click-open.wav");
+const clickClose = new Audio("../audio/click-close.wav");
+const battleMusic = new Audio("../audio/battle.mp3");
+const victory = new Audio("../audio/victory.wav");
+const tackleHit = new Audio("../audio/tackle.mp3");
+const scratchHit = new Audio("../audio/scratch.mp3");
+const startBattle = new Audio("../audio/initBattle.wav");

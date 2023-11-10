@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medyo Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title-container">
+        <img id="title-banner" src="img/title.png" alt="title" />
+        <div class="button-container">
+          <button id="start-btn">Start</button>
+          <button id="instructions-btn">Instructions</button>
+        </div>
+      </div>
+
+      <div class="instructions-container">
+        <button id="close-btn">x</button>
+        <div class="about">
+          <h2>About</h2>
+
+          <p>
+            Welcome to MedyoPKMN—where battles are Medyo fierce and Medyo funny! Dive into a world
+            where creatures are Medyo quirky and adventures are Medyo epic. In this unique web game,
+            embrace the essence of "Medyo," where strategies are Medyo clever and laughter is Medyo
+            contagious. Collect an array of Medyo-inspired creatures, each with its own Medyo twist.
+            Engage in fast-paced battles, combining classic moves with hilarious Medyo tactics.
+            Challenge friends and rivals, prove your Medyo skills, and become the ultimate MedyoPKMN
+            Master! Get ready for a Medyo good time—play MedyoPKMN now!
+          </p>
+        </div>
+
+        <div class="controls">
+          <h2>Controls</h2>
+          <ul>
+            <li>W - Move up</li>
+            <li>A - Move left</li>
+            <li>S - Move down</li>
+            <li>D - Move right</li>
+            <li>Click - Select</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <button id="home-btn">X</button>
+
+        <div class="quit-box">
+          <h2>Are you sure ?</h2>
+          <div class="quit-choice">
+            <button id="quit-yes">Yes</button>
+            <button id="quit-no">No</button>
+          </div>
+        </div>
+        <canvas></canvas>
+
+        <div class="block"></div>
+        <div class="user-interface">
+          <!-- Enemy's health bar -->
+          <div class="data-container draggle">
+            <h2>Axolot</h2>
+            <div class="health-container">
+              <div class="health-bar gray"></div>
+              <div id="enemy" class="health-bar green"></div>
+            </div>
+          </div>
+
+          <!-- Player's health bar -->
+          <div class="data-container emby">
+            <h2>Flamby</h2>
+            <div class="health-container">
+              <div class="health-bar gray"></div>
+              <div id="player" class="health-bar green"></div>
+            </div>
+          </div>
+
+          <div class="scene-container">
+            <div id="quotes" class="quote-container"></div>
+            <div class="attack-container"></div>
+
+            <div class="text-container">
+              <h2 id="attack-type">Attack Type</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="data/audio.js"></script>
+    <script src="data/collisions.js" defer></script>
+    <script src="data/battleZonesData.js" defer></script>
+    <script src="data/attacks.js" defer></script>
+    <script src="monsters.js" defer></script>
+    <script src="classes.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="battleScene.js" defer></script>
+  </body>
+</html>
